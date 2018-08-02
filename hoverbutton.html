@@ -1,0 +1,32 @@
+<!-- Small animation that changes button text upon cursor hover. -->
+<head>
+<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+<style>
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #6e6e6e;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: none;
+  font-family: 'Inconsolata',monospace;
+  font-size: 12px;
+}
+
+button:hover span {display:none}
+button:hover:before {content:"t e x t h e r e"}
+
+</style>
+</head>
+<body>
+
+<button class="button"><span>• • • • • • • •</span></button>
+
+</body>
+</html>

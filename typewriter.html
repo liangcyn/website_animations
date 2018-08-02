@@ -1,0 +1,47 @@
+<!-- Small typewriter animation; types letters with blinking cursor. -->
+
+<div class="typewriter">
+  <h1>HELLO, WORLD!</h1>
+</div>
+
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+
+<style type="text/css">
+body {
+  background: #FFFFFF;
+  padding-top: 5em;
+  justify-content: center;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  display: flex;
+  color: #3F3F3F;
+  font-family: Lato;
+  font-weight: normal;
+  font-size: 21;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid #a82e2e;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 3; 
+  animation: 
+    typing 2.5s steps(30, end),
+    blink-caret .7s step-end infinite;
+}
+
+.typewriter {
+    display: inline-flex;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #a82e2e }
+</style>
